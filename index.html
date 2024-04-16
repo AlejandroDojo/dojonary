@@ -17,49 +17,54 @@
                 <input class="header-search-input" type="text" placeholder="Search">
             </div>
             <div class="header-login">
-                <button class="header-login-button">Login</button>
+                <button class="header-login-button btn" id="btn-login" onclick="changeInner('btn-login','Logout')">Login</button>
             </div>
         </nav>
     </header>
-    <section>
-        <main class="main">
-            <article class="main-article">
-                <div class="article-content">
-                    <h2>ninja</h2>
-                    <h3>noun</h3>
-                    <p>Plural: <span class="article-plural">ninjas</span></p>
-                    <button>13 likes</button>
-                </div>
-                <div class="main-article-description">
-                    <p>
-                        A practitioner skilled in the Japanese art of ninjutsu
-                    </p>
-                </div>
-            </article>
-            <article class="main-article">
-                <div class="article-content">
-                    <h2>ninja</h2>
-                    <h3>noun</h3>
-                    <p>Plural: <span class="article-plural">ninjas</span></p>
-                    <button>13 likes</button>
-                </div>
-                <div class="main-article-description">
-                    <p>
-                        A practitioner skilled in the Japanese art of ninjutsu
-                    </p>
-                </div>
-            </article>
-        </main>
-        <aside> 
-            <section class="aside">
-                <div class="aside-title">
-                    <h2>Dojonary is defined by You</h2>
-                </div>
-                <div class="aside-btn">
-                    <button>Add Definition</button>
-                </div>
-            </section>
-        </aside>
+    <section class="body">
+        <section class="content">
+            <nav>
+                <input class="header-search-input content-nav" type="text" placeholder="Search">
+            </nav>
+            <main class="main">
+                <article class="main-article">
+                    <div class="article-content">
+                        <h2>ninja</h2>
+                        <h3>noun</h3>
+                        <p>Plural: <span class="article-plural">ninjas</span></p>
+                        <button class="btn article-btn" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="main-article-description">
+                        <p>
+                            A practitioner skilled in the <span class="link-deco">Japanese</span> art of  <span class="link-deco"> ninjutsu </span>
+                        </p>
+                    </div>
+                </article>
+                <article class="main-article">
+                    <div class="article-content">
+                        <h2>ninja</h2>
+                        <h3>noun</h3>
+                        <p>Plural: <span class="article-plural">ninjas</span></p>
+                        <button class="btn article-btn" onclick="alert('Ninja was liked')">13 likes</button>
+                    </div>
+                    <div class="main-article-description">
+                        <p>
+                            A <span class="link-deco">programmer</span> who breaks down problems with <span class="link-deco">zen</span>-like focus
+                        </p>
+                    </div>
+                </article>
+            </main>
+            <aside class="content-aside"> 
+                <section class="aside">
+                    <div class="aside-title">
+                        <h2>Dojonary is defined by <span class="strong-bold">YOU</span></h2>
+                    </div>
+                    <div class="aside-btn">
+                        <button class="btn aside-btn-color" id="btn-aside" onclick="disable('btn-aside')">Add Definition</button>
+                    </div>
+                </section>
+            </aside>
+        </section>
     </section>
     <script src="./js/index.js"></script>
 </body>
