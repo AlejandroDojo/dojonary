@@ -68,7 +68,17 @@
     align-items: center;
     justify-content: space-evenly;
     padding: 0 1rem;
+
+    & .article-content {
+        flex: 1;
+        text-align: center;
+    }
+    & .main-article-description {
+        flex: 2;
+        text-align: center;
+    }
 }
+
 .main-article h2,
 .main-article h3,
 .main-article hp  {
