@@ -5,3 +5,14 @@
     --btn-aside: #93c47d;
     --link: #467ead;
 }
+.header {
+    display: grid;
+    justify-items: center;
+}
+.header-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    background-color: var(--header-background);
+}
